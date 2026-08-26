@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منشئ السيرة الذاتية — قوالب قابلة للتعديل</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+<div class="toolbar">
+  <span class="brand">منشئ السيرة الذاتية</span>
+  <button data-tpl="1" class="tpl-btn active">قالب 1 — محيط</button>
+  <button data-tpl="2" class="tpl-btn">قالب 2 — الليل</button>
+  <button data-tpl="3" class="tpl-btn">قالب 3 — الأصالة</button>
+  <button data-tpl="4" class="tpl-btn">قالب 4 — الموجة</button>
+  <button data-tpl="5" class="tpl-btn">قالب 5 — الاحترافية</button>
+  <button data-tpl="6" class="tpl-btn">قالب 6 — الخط الزمني</button>
+  <button data-tpl="7" class="tpl-btn">قالب 7 — الهدوء الأزرق</button>
+  <button data-tpl="8" class="tpl-btn">قالب 8 — التوثيق</button>
+  <div class="sep"></div>
+  <button data-lang="ar" class="lang-btn active">AR — عربي</button>
+  <button data-lang="en" class="lang-btn">EN — English</button>
+  <div class="sep"></div>
+  <span class="swatch-label">الألوان:</span>
+  <button class="swatch" style="background:#2c6e63" onclick="setColors('#2c6e63','#1c2b28')" title="تركواز"></button>
+  <button class="swatch" style="background:#c9a227" onclick="setColors('#c9a227','#1b2430')" title="ذهبي وكحلي"></button>
+  <button class="swatch" style="background:#a1442e" onclick="setColors('#a1442e','#1e1b16')" title="عنابي"></button>
+  <button class="swatch" style="background:#2f6fb0" onclick="setColors('#2f6fb0','#1c3550')" title="أزرق"></button>
+  <button class="swatch" style="background:#7a4fa0" onclick="setColors('#7a4fa0','#2e1f3d')" title="بنفسجي"></button>
+  <button class="swatch" style="background:#3f8f5f" onclick="setColors('#3f8f5f','#1f3a2c')" title="أخضر"></button>
+  <button class="reset-swatch" onclick="resetColors()" title="ألوان القالب الأصلية">↺</button>
+  <div class="sep"></div>
+  <span class="grow"></span>
+  <button class="print-btn" onclick="handlePrint()">⬇ تنزيل PDF / طباعة</button>
+  <button onclick="openFullPage()">↗ فتح في تبويب المتصفح</button>
+</div>
+<div class="hint-bar">إذا لم تفتح نافذة الطباعة مباشرة (شائع داخل تطبيقات الجوال)، اضغط "فتح في تبويب المتصفح" ثم اطبع من قائمة المتصفح (زر المشاركة أو ⋮ ثم طباعة / حفظ كـ PDF).</div>
+ 
+<div class="stage">
+<div class="page tpl-1" id="cv"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
